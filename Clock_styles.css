@@ -15,3 +15,32 @@ header  > div{
    text-align: center;
    color: red;
 }
+
+body > header img{
+   float: left;
+   width: 150px;
+   height: 150px;
+}
+
+body > header nav li{
+   display: inline;
+   float: left;
+   vertical-align: top;
+   padding: 20px;
+   font-size: xx-large;
+}
+
+body > header nav {
+   overflow: hidden;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+li a{
+   color: red;
+}
+
+li a:hover, li a:visited {
+   color: rgb(255, 153, 255);
+}

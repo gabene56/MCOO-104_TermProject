@@ -10,7 +10,7 @@
 
 */
 
-/* run the clocck function */
+/* run the clock function */
 clock();
 setInterval("clock()", 1000);
 
@@ -19,9 +19,14 @@ function clock() {
     //current time
     var time = new Date();
     var hour = time.getHours();
+    if (hour < 10)
+        hour= "0" + hour;
     var minute = time.getMinutes();
+    if (minute < 10)
+        minute= "0" +minute;
     var second = time.getSeconds();
+    if (second < 10)
+        second = "0" + second;
     // display time
-    document.getElementById("time").innerHTML = hour + ":" + minute + ":" + second;
-
+        document.getElementById("time").innerHTML = hour + ":" + minute + ":" + second;
 }
