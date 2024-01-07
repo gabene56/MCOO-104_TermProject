@@ -16,6 +16,13 @@ header  > div{
    color: red;
 }
 
+article h1 {
+   font-size: 54px;
+   margin-bottom: 21px;
+   color: white;
+   text-align: center;
+}
+
 body > header img{
    float: left;
    width: 150px;
@@ -50,7 +57,7 @@ body > article {
    height: 100vh;
    width: 100vw;
    font-family: "Arial Black", serif;
-   padding-top: 250px;
+   padding-top: 120px;
    margin: 0;
    background-color: black;
    text-align: center;
@@ -72,3 +79,20 @@ textarea{
    height: 100px;
    width: 95%;
  }
+
+img.content {
+   border-radius: 50% 20% / 10% 40%;
+   margin: 0 15px
+}
+
+article.thankyou {
+   padding-top: 180px;
+}
+
+h1.thankyou, p.thankyou {
+   text-align: center;
+   margin: auto;
+   width: 60%;
+   border: 3px solid aquamarine;
+   padding: 15px 10px;
+}

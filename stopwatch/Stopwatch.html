@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stopwatch</title>
+    <script src="Stopwatch.js" defer></script>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<header>
+
+    <nav>
+        <img src="../images/logo.png" alt="TIME"/>
+        <ul>
+            <li><a href="../Home.html"><h1>Home Page</h1></a></li>
+            <li><a href="../clock/Clock.html"><h1>Clock</h1></a></li>
+            <li><a href="../stopwatch/Stopwatch.html"><h1>Stopwatch</h1></a></li>
+            <li><a href="../content/Content.html"><h1>Content</h1></a></li>
+            <li><a href="../survey/Form.html"><h1>Survey</h1></a></li>
+        </ul>
+    </nav>
+
+</header>
+<article>
+    <div class="stopwatch">
+        <h1>Stopwatch</h1>
+        <h1 id="displayTime">00:00:00</h1>
+        <button onclick="watchStart()">Start</button>
+        <button onclick="watchStop()">Stop</button>
+        <button onclick="watchReset()">Reset</button>
+        <div class="buttons"></div>
+    </div>
+</article>
+</body>
+</html>
