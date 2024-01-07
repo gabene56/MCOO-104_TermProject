@@ -44,3 +44,15 @@ li a{
 li a:hover, li a:visited {
    color: rgb(255, 153, 255);
 }
+
+body > article {
+   color: red;
+   height: 100vh;
+   width: 100vw;
+   font-family: "Arial Black";
+   padding-top: 250px;
+   margin: 0px;
+   background-color: black;
+   text-align: center;
+   color: red;
+}
