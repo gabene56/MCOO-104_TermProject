@@ -8,9 +8,9 @@ header  > div{
    height: 100vh;
    width: 100vw;
    font-size: 250px;
-   font-family: "Arial Black";
+   font-family: "Arial Black", serif;
    padding-top: 250px;
-   margin: 0px;
+   margin: 0;
    background-color: black;
    text-align: center;
    color: red;
@@ -49,10 +49,26 @@ body > article {
    color: red;
    height: 100vh;
    width: 100vw;
-   font-family: "Arial Black";
+   font-family: "Arial Black", serif;
    padding-top: 250px;
-   margin: 0px;
+   margin: 0;
    background-color: black;
    text-align: center;
-   color: red;
 }
+ body > form{
+    color: red;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Arial Black", serif;
+    padding-top: 150px;
+    margin: 0;
+    background-color: black;
+ }
+
+textarea{
+   color: red;
+   background-color: black;
+   margin-top: 10px;
+   height: 100px;
+   width: 95%;
+ }
