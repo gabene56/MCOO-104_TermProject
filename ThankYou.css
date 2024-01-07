@@ -1,0 +1,12 @@
+.center {
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    border: 3px solid Black;
+    border-image: linear-gradient(to right, black, yellow) 1;
+    padding: 10px;
+    background-color: white;
+}
+body {
+    background-color: aquamarine;
+}
