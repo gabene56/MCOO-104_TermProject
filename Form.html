@@ -1,76 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--
-   New Perspectives on HTML5 and CSS3, 8th Edition
-   Term Project
+          <!--
+         New Perspectives on HTML5 and CSS3, 8th Edition
+         Term Project
 
-   Clock
-   Author: Gladys Benedid
-   Date:   12/28/2023
+         Clock
+         Author: Gladys Benedid
+         Date:   12/28/2023
 
-   Filename: Clock.html
+         Filename: Clock.html
 
--->
+      -->
     <meta charset="UTF-8">
-    <link href="css/styles.css" rel="stylesheet"/>
-    <script src="js/daysAgo.js" defer></script>
+    <link href="Clock_styles.css" rel="stylesheet" />
+    <link href="Form.css" rel="stylesheet"/>
+
     <title>Form</title>
 </head>
 <body>
-<header>
+    <header>
 
-    <nav>
-        <img src="images/logo.png" alt="TIME"/>
-        <ul>
-            <li><a href="index.html"><h1>Home Page</h1></a></li>
-            <li><a href="Clock.html"><h1>Clock</h1></a></li>
-            <li><a href="Stopwatch.html"><h1>Stopwatch</h1></a></li>
-            <li><a href="Content.html"><h1>Content</h1></a></li>
-            <li><a href="Form.html"><h1>Survey</h1></a></li>
-        </ul>
-    </nav>
+        <nav>
+            <img src="logo.png" alt="TIME"/>
+            <ul>
+                <li><a href="Home.html"><h1>Home Page</h1></a></li>
+                <li><a href="Clock.html"><h1>Clock</h1></a></li>
+                <li><a href="Stopwatch.html"><h1>Stopwatch</h1></a></li>
+                <li><a href="Content.HTML"><h1>Content</h1></a></li>
+                <li><a href="Form.html"><h1>Survey</h1></a></li>
 
-</header>
-<article>
+            </ul>
+        </nav>
+
+    </header>
+
     <h1 id="form">Survey</h1>
-    <form id="survey" action="ThankYou.html" method="post">
+    <form id="survey" action="example.com" method="post">
         <p>Please help us improve our website by filling out the form below</p>
         <fieldset>
             <div>
-                <label>Which of our tools did you use?</label>
-                <fieldset class="tool">
-                    <label for="Clock">Clock</label>
-                    <input name="tClock" id="Clock" value="Clock" type="radio"/>
-                    <label for="Stopwatch">Stopwatch</label>
-                    <input name="tStopwatch" id="Stopwatch" value="Stopwatch" type="radio"/>
-                </fieldset>
+             <label>Which of our tools did you use?</label>
+             <fieldset class="tool">
+                  <label for="Clock">Clock</label>
+                  <input name="tClock" id="Clock" value="Clock" type="checkbox"/>
+                  <label for="Stopwatch">Stopwatch</label>
+                  <input name="tStopwatch" id="Stopwatch" value="Stopwatch" type="checkbox"/>
+             </fieldset>
             </div>
             <div>
-                <label for="rangeBox">Rate the usefullness of our tools on a scale of 1 - 10<br/>(0=poor;
-                    10=great)</label>
-                <fieldset class="usefull">
-                    0
-                    <input name="serviceRate" id="rangeBox" type="range" value="5" step="1" min="0" max="10"/>
-                    10
+                <label for="rangeBox">Rate the usefulness of our tools on a scale of 1 - 10<br />(0=poor; 10=great)</label>
+                <fieldset class="useful">
+               0
+               <input name="serviceRate" id="rangeBox" type="range" value="5" step="1" min="0" max="10"/>
+               10
                 </fieldset>
             </div>
-            <div>
-                <fieldset>
-                    <label for="commBox">What tools would you like to see added to our website that would help you
-                        manage your time better?</label>
-                    <textarea name="Opinion" id="commBox"></textarea>
-                </fieldset>
-            </div>
+
 
         </fieldset>
-        <input type="submit" value="Submit Survey Answers"/>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Question</th>
+                        <th>Answer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>What tools or apps do you use for time management and organization?</th>
+                        <td><textarea id="use" name="use"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th>Are there specific technologies that you find helpful in increasing your productivity?</th>
+                        <td><textarea id="specific" name="specific"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th>Do you use any tools for goal setting and tracking your progress?</th>
+                        <td><textarea id="tools" name="tools"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th>What role does technology play in your daily routine to streamline tasks and save time?</th>
+                        <td><textarea id="tech" name="tech"></textarea></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Submit"/>
+                        <input type="reset" value="Cancel"/>
+                    </td>
+                </tr>
+
+                </tfoot>
+
+            </table>
+
     </form>
 
-    <footer>
-        Website created on January 2nd, 2024 (<span id="daysAgo"></span> days ago)
-    </footer>
 
-</article>
+
 </body>
 </html>
