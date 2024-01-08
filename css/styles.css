@@ -68,6 +68,9 @@ body > article {
    background-color: black;
    text-align: center;
 }
+body > article > #time {
+   font-size: 154px;
+}
  body > form{
     color: red;
     height: 100vh;
@@ -101,4 +104,9 @@ h1.thankyou, p.thankyou {
    width: 60%;
    border: 3px solid aquamarine;
    padding: 15px 10px;
+}
+
+footer {
+   color: antiquewhite;
+   padding: 15px 0;
 }
