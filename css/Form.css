@@ -1,0 +1,13 @@
+table {
+    background: black;
+    border: 10px outset red;
+    font-size: 1em;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td{
+    border: 2px solid red;
+    padding: 1.5px;
+    vertical-align: center;
+}
